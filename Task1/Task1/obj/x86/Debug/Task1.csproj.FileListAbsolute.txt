@@ -1,0 +1,5 @@
+B:\студия\Курсы по с#\Task1\Task1\bin\Debug\Task1.exe
+B:\студия\Курсы по с#\Task1\Task1\bin\Debug\Task1.pdb
+B:\студия\Курсы по с#\Task1\Task1\obj\x86\Debug\Task1.exe
+B:\студия\Курсы по с#\Task1\Task1\obj\x86\Debug\Task1.pdb
+B:\студия\Курсы по с#\Task1\Task1\obj\x86\Debug\Task1.csprojResolveAssemblyReference.cache
