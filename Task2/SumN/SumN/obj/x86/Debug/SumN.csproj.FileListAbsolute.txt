@@ -1,0 +1,5 @@
+B:\студия\Курсы C#\Task2\Task2-1\SumN\SumN\bin\Debug\SumN.exe
+B:\студия\Курсы C#\Task2\Task2-1\SumN\SumN\bin\Debug\SumN.pdb
+B:\студия\Курсы C#\Task2\Task2-1\SumN\SumN\obj\x86\Debug\SumN.exe
+B:\студия\Курсы C#\Task2\Task2-1\SumN\SumN\obj\x86\Debug\SumN.pdb
+B:\студия\Курсы C#\Task2\Task2-1\SumN\SumN\obj\x86\Debug\SumN.csprojResolveAssemblyReference.cache
