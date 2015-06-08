@@ -1,0 +1,10 @@
+B:\студия\Курсы C#\Task2\Task2-1\MatrixSum\MatrixSum\bin\Debug\MatrixSum.exe
+B:\студия\Курсы C#\Task2\Task2-1\MatrixSum\MatrixSum\bin\Debug\MatrixSum.pdb
+B:\студия\Курсы C#\Task2\Task2-1\MatrixSum\MatrixSum\obj\x86\Debug\MatrixSum.exe
+B:\студия\Курсы C#\Task2\Task2-1\MatrixSum\MatrixSum\obj\x86\Debug\MatrixSum.pdb
+B:\студия\Курсы C#\Task2\Task2-1\MatrixSum\MatrixSum\obj\x86\Debug\MatrixSum.csprojResolveAssemblyReference.cache
+B:\Тестирование\C#\Репозитарий\Task2\MatrixSum\MatrixSum\obj\x86\Debug\MatrixSum.exe
+B:\Тестирование\C#\Репозитарий\Task2\MatrixSum\MatrixSum\obj\x86\Debug\MatrixSum.pdb
+B:\Тестирование\C#\Репозитарий\Task2\MatrixSum\MatrixSum\bin\Debug\MatrixSum.exe
+B:\Тестирование\C#\Репозитарий\Task2\MatrixSum\MatrixSum\bin\Debug\MatrixSum.pdb
+B:\Тестирование\C#\Репозитарий\Task2\MatrixSum\MatrixSum\obj\x86\Debug\MatrixSum.csprojResolveAssemblyReference.cache
