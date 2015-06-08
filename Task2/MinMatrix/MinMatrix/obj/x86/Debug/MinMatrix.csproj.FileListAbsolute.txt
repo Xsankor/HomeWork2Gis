@@ -1,0 +1,10 @@
+B:\студия\Курсы C#\Task2\Task2-1\MinMatrix\MinMatrix\bin\Debug\MinMatrix.exe
+B:\студия\Курсы C#\Task2\Task2-1\MinMatrix\MinMatrix\bin\Debug\MinMatrix.pdb
+B:\студия\Курсы C#\Task2\Task2-1\MinMatrix\MinMatrix\obj\x86\Debug\MinMatrix.exe
+B:\студия\Курсы C#\Task2\Task2-1\MinMatrix\MinMatrix\obj\x86\Debug\MinMatrix.pdb
+B:\студия\Курсы C#\Task2\Task2-1\MinMatrix\MinMatrix\obj\x86\Debug\MinMatrix.csprojResolveAssemblyReference.cache
+B:\Тестирование\C#\Репозитарий\Task2\MinMatrix\MinMatrix\obj\x86\Debug\MinMatrix.exe
+B:\Тестирование\C#\Репозитарий\Task2\MinMatrix\MinMatrix\obj\x86\Debug\MinMatrix.pdb
+B:\Тестирование\C#\Репозитарий\Task2\MinMatrix\MinMatrix\bin\Debug\MinMatrix.exe
+B:\Тестирование\C#\Репозитарий\Task2\MinMatrix\MinMatrix\bin\Debug\MinMatrix.pdb
+B:\Тестирование\C#\Репозитарий\Task2\MinMatrix\MinMatrix\obj\x86\Debug\MinMatrix.csprojResolveAssemblyReference.cache
