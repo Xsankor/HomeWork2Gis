@@ -1,0 +1,8 @@
+B:\студия\Курсы C#\Task2\Task2-1\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+B:\студия\Курсы C#\Task2\Task2-1\Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
+B:\студия\Курсы C#\Task2\Task2-1\Calculator\Calculator\Calculator\obj\x86\Debug\Calculator.exe
+B:\студия\Курсы C#\Task2\Task2-1\Calculator\Calculator\Calculator\obj\x86\Debug\Calculator.pdb
+B:\Тестирование\C#\Репозитарий\Task2\Calculator\Calculator\Calculator\obj\x86\Debug\Calculator.exe
+B:\Тестирование\C#\Репозитарий\Task2\Calculator\Calculator\Calculator\obj\x86\Debug\Calculator.pdb
+B:\Тестирование\C#\Репозитарий\Task2\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+B:\Тестирование\C#\Репозитарий\Task2\Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
