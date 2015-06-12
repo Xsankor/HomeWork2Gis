@@ -9,15 +9,17 @@ namespace Degree
     {
         static void Main(string[] args)
         {
-            double Number = 0, Degree = 0, Result = 0;
+            double number = 0;
+            double degree = 0;
+            double result = 0;
             Console.WriteLine("Введите X - число, которое хотите возвести в степень");
             try 
             {
-                Number = Convert.ToDouble(Console.ReadLine());
+                number = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Введите N - степень, в которую хотите возвести число");
-                Degree = Convert.ToDouble(Console.ReadLine());
-                Result = Math.Pow(Number, Degree);
-                if (Convert.ToString(Result) == "NaN")
+                degree = Convert.ToDouble(Console.ReadLine());
+                result = Math.Pow(number, degree);
+                if (Convert.ToString(result) == "NaN")
                 {
                     Console.WriteLine("Данную операцию невозможно выполнить. Результат - не определен!");
                     Console.ReadKey();
@@ -25,7 +27,7 @@ namespace Degree
                 }
                 else
                 {
-                    Console.WriteLine("Х в степени N = " + Result);
+                    Console.WriteLine("Х в степени N = " + result);
                     Console.ReadKey();
                 }
             }

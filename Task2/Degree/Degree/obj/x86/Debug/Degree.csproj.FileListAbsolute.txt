@@ -6,3 +6,4 @@ B:\Тестирование\C#\Репозитарий\Task2\Degree\Degree\obj\x8
 B:\Тестирование\C#\Репозитарий\Task2\Degree\Degree\obj\x86\Debug\Degree.pdb
 B:\Тестирование\C#\Репозитарий\Task2\Degree\Degree\bin\Debug\Degree.exe
 B:\Тестирование\C#\Репозитарий\Task2\Degree\Degree\bin\Debug\Degree.pdb
+B:\Тестирование\C#\Репозитарий\Task2\Degree\Degree\obj\x86\Debug\Degree.csprojResolveAssemblyReference.cache
