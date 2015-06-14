@@ -1,0 +1,6 @@
+B:\студия\Курсы C#\Task2\Task2-2\CountEveryWorld\CountEveryWorld\bin\Debug\CountEveryWorld.exe
+B:\студия\Курсы C#\Task2\Task2-2\CountEveryWorld\CountEveryWorld\bin\Debug\CountEveryWorld.pdb
+B:\студия\Курсы C#\Task2\Task2-2\CountEveryWorld\CountEveryWorld\obj\x86\Debug\CountEveryWorld.exe
+B:\студия\Курсы C#\Task2\Task2-2\CountEveryWorld\CountEveryWorld\obj\x86\Debug\CountEveryWorld.pdb
+B:\Тестирование\C#\Репозитарий\Task3\CountEveryWorld\CountEveryWorld\obj\x86\Debug\CountEveryWorld.exe
+B:\Тестирование\C#\Репозитарий\Task3\CountEveryWorld\CountEveryWorld\obj\x86\Debug\CountEveryWorld.pdb
