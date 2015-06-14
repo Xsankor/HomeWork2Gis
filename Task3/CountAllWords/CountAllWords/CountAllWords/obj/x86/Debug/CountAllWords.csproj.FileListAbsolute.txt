@@ -1,0 +1,4 @@
+B:\студия\Курсы C#\Task2\Task2-2\CountAllWords\CountAllWords\CountAllWords\bin\Debug\CountAllWords.exe
+B:\студия\Курсы C#\Task2\Task2-2\CountAllWords\CountAllWords\CountAllWords\bin\Debug\CountAllWords.pdb
+B:\студия\Курсы C#\Task2\Task2-2\CountAllWords\CountAllWords\CountAllWords\obj\x86\Debug\CountAllWords.exe
+B:\студия\Курсы C#\Task2\Task2-2\CountAllWords\CountAllWords\CountAllWords\obj\x86\Debug\CountAllWords.pdb
