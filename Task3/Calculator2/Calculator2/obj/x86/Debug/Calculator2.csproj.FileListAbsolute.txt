@@ -1,0 +1,4 @@
+B:\студия\Курсы C#\Task2\Task2-2\Calculator2\Calculator2\bin\Debug\Calculator2.exe
+B:\студия\Курсы C#\Task2\Task2-2\Calculator2\Calculator2\bin\Debug\Calculator2.pdb
+B:\студия\Курсы C#\Task2\Task2-2\Calculator2\Calculator2\obj\x86\Debug\Calculator2.exe
+B:\студия\Курсы C#\Task2\Task2-2\Calculator2\Calculator2\obj\x86\Debug\Calculator2.pdb
