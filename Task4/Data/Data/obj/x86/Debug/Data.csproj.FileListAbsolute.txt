@@ -1,0 +1,5 @@
+B:\студия\Курсы C#\Task4\Data\Data\Data\bin\Debug\Data.exe
+B:\студия\Курсы C#\Task4\Data\Data\Data\bin\Debug\Data.pdb
+B:\студия\Курсы C#\Task4\Data\Data\Data\obj\x86\Debug\Data.exe
+B:\студия\Курсы C#\Task4\Data\Data\Data\obj\x86\Debug\Data.pdb
+B:\студия\Курсы C#\Task4\Data\Data\Data\obj\x86\Debug\Data.csprojResolveAssemblyReference.cache

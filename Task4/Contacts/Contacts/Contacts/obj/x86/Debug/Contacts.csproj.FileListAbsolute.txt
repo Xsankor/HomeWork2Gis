@@ -1,0 +1,4 @@
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\bin\Debug\Contacts.exe
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\bin\Debug\Contacts.pdb
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\obj\x86\Debug\Contacts.exe
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\obj\x86\Debug\Contacts.pdb
