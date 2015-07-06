@@ -1,0 +1,1 @@
+я объединила оба проекта (Data и Contacts) в один Soution в проекте Contacts

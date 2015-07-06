@@ -7,11 +7,9 @@ namespace Contacts
 {
     public class Contact
     {
-        public long ContactNumber {get; set;}
         public string ContactName { get; set;}
-        public Contact (long contactNumber, string contactName)
+        public Contact (string contactName)
         {
-            ContactNumber = contactNumber;
             ContactName = contactName;
         }
 
@@ -20,7 +18,7 @@ namespace Contacts
         }
         public override string ToString()
         {
-            return string.Format("Contact Name: {0}, contact number {1}", ContactName, ContactNumber);
+            return string.Format("Contact Name: {0}", ContactName);
         }
     }
 }
