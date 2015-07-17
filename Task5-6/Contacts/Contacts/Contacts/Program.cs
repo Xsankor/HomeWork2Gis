@@ -3,149 +3,230 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using Contacts;
+
 namespace Contacts
 {
     class Program
     {
-        Dictionary<long, string> CardList = new Dictionary<long, string> 
-        {
-            {1, "SynCode = 123, Contact Name = Anna Petrova"},
-            {2, "SynCode = 103, Contact Name = J Stark"}
-        };
         static void Main(string[] args)
         {
-            Dictionary<long, string> CardList = new Dictionary<long, string> 
+            List<string> CardList = new List<string>
             {
-                {1, "SynCode = 123, Contact Name = Anna Petrova"},
-                {2, "SynCode = 103, Contact Name = J Stark"}
+                "SynCode = 123, Contact Name = Anna Petrova",
+                "SynCode = 103, Contact Name = J Stark"
             };
+
             string answer = "";
-            long NextId = 3; 
             for (int i = 0; answer != "0"; i++)
             {
-                Console.WriteLine("Для создания телефонного контакта и его сохранения в текущей сессии, введите-1\n"
-                + "Для создания e-mail контакта введите и его сохранения в текущей сессии- 2\n"
-                + "Для завершения работы программы, нажмите 0\n");
-                answer = Console.ReadLine();
+                Console.WriteLine("0. Завершение работы программы\n"
+                    + "1. Создать карточку\n"
+                    + "2. Изменить карточку, хранящуюся в списке контактов\n"
+                    + "3. Добавить контакт к карточке\n"
+                    + "4. Удалить карточку, хранящуюся в списке контактов\n"
+                    + "5. Вывести все карточки на экран\n");
 
+                answer = Console.ReadLine();
                 switch (answer)
                 {
                     case "0":
-                        Environment.Exit(0);
-                        break;
-                    case "1":
-                        try
                         {
-                            Console.WriteLine("Введите имя контакта");
-                            string name = Console.ReadLine();
-                            Console.WriteLine("Введите код города");
-                            long cityCode = System.Convert.ToInt64(Console.ReadLine());
-                            TelephoneContact tc = new TelephoneContact(cityCode, name);
-                            Console.WriteLine(tc.ToString());
-                            Console.WriteLine("Вывести список всех контактов? (1 - Да, любая другая клавиша - нет)");
-                            string ans = Console.ReadLine();
-                            if (ans == "1")
-                            {
-                                string cardNumber = tc.ZoneCode.ToString();
-                                string cardName = tc.ContactName;
-                                if (cardName == string.Empty)
-                                {
-                                    throw new Exception("Имя контакта не может быть пустым");
-                                }
-                                if (NextId < 0)
-                                {
-                                    throw new Exception("Id карточки не может быть отрицательным");
-                                }
-                                if (tc.ZoneCode == null)
-                                {
-                                    throw new Exception("У карточки должен быть SynCode");
-                                }
-                                Card cd = new Card(NextId, tc.ZoneCode, tc.ContactName);
-                                cd.AddContactToCardList(CardList);
-                                NextId++;
-                                Console.WriteLine(cd.ShowAllContacts(CardList));
-                                Console.WriteLine("Вы хотите удалить последний контакт? (1 - Да, любая другая клавиша - нет)");
-                                string ansDelete = Console.ReadLine();
-                                if (ansDelete == "1")
-                                {
-                                    // В программе напрямую указала на созданный контакт, но можно поменять на то, 
-                                    //чтобы пользователь сам вводил, какой контакт ему нужно удалить
-                                    Console.WriteLine(cd.DeleteContact(NextId - 1, CardList));
-                                    Console.WriteLine(cd.ShowAllContacts(CardList));
-                                }
-                            }
-                        }
-                        catch (FormatException)
-                        {
-                            Console.WriteLine("Введенное значение не соответсвует формату числа!");
-                            Console.ReadKey();
                             Environment.Exit(0);
+                            break;
                         }
-                        catch (Exception e)
+                    case "1":
                         {
-                            Console.WriteLine(e.Message);
+                            AddCard(CardList);
+                            break;
                         }
-                        break;
-
                     case "2":
-                        try
                         {
-                            Console.WriteLine("Введите имя контакта");
-                            string _name = Console.ReadLine();
-                            Console.WriteLine("Введите e-mail контакта");
-                            string _mail = Console.ReadLine();
-                            Mail mc = new Mail(_mail, _name);
-                            Console.WriteLine(mc.ToString());
-                            Console.WriteLine("Вывести список всех контактов? (1 - Да, любая другая клавиша - нет)");
-                            string ans = Console.ReadLine();
-                            if (ans == "1")
+                            ModifyCard(CardList);
+                            break;
+                        }
+                    case "3":
+                        {
+                            Console.WriteLine(
+                                "1. Создать телефонный контакт;\n"
+                                + "2. Создать mail контакт\n");
+                            var answerAddContact = Console.ReadLine();
+                            string newContact = string.Empty;
+                            switch (answerAddContact)
                             {
-                                Console.WriteLine("Введите SynCode карточки");
-                                var cardCode = Console.ReadLine();
-                                if (cardCode == string.Empty)
-                                {
-                                    throw new Exception("У карточки должен быть SynCode");
-                                }
-                                if (_name == string.Empty)
-                                {
-                                    throw new Exception("Имя контакта не может быть пустым");
-                                }
-                                var synCode = System.Convert.ToInt64(cardCode);
-                                var cardName = "(mailto: " + mc.mail.ToString() + ") " + mc.ContactName;
-                                if (NextId < 0)
-                                {
-                                    throw new Exception("Id карточки не может быть отрицательным");
-                                }
-                                Card cd = new Card(NextId, synCode, cardName);
-                                cd.AddContactToCardList(CardList);
-                                NextId++;
-                                Console.WriteLine(cd.ShowAllContacts(CardList));
-                                Console.WriteLine("Вы хотите удалить последний контакт? (1 - Да, любая другая клавиша - нет)");
-                                string ansDelete = Console.ReadLine();
-                                if (ansDelete == "1")
-                                {
-                                    // В программе напрямую указала на созданный контакт, но можно поменять на то, 
-                                    //чтобы пользователь сам вводил, какой контакт ему нужно удалить
-                                    Console.WriteLine(cd.DeleteContact(NextId - 1, CardList));
-                                    Console.WriteLine(cd.ShowAllContacts(CardList));
-                                }
+                                case "1":
+                                    newContact = createTelephoneCard(CardList);
+                                    break;
+                                case "2":
+                                    newContact = createMailCard(CardList);
+                                    break;
+                                default:
+                                    throw new Exception(string.Format("Невозможно создать контакт, так как введенное значение {0} не равно 1 или 2", answerAddContact));
                             }
+                             Console.WriteLine(newContact + '\n');    
+                            break;
                         }
-                        catch (FormatException)
+                    case "4":
                         {
-                            Console.WriteLine("Введенное значение не соответсвует формату числа!");
-                            Console.ReadKey();
+                            DeleteContact(CardList);
+                            break;
+                            
                         }
-                        catch (Exception er)
+                    case "5":
                         {
-                            Console.WriteLine(er.Message);
+                            var allCards = DisplayAllCards(CardList);
+                            Console.WriteLine(allCards + '\n');
+                            break;
                         }
-                        break;
-
                     default:
-                        Console.WriteLine("Введенное значение отличается от 1, 2!");
-                        break;
+                        {
+                            Console.WriteLine("Введенное значение отличается от 1, 2!");
+                            break;
+                        }
                 }
+            }
+
+        }
+
+        // Метод создания телефонного контакта и добавления его в карточку
+        private static string createTelephoneCard(List<string> cardList)
+        {
+            try
+            {
+                var cd = createCard();
+                Console.WriteLine("Введите имя контакта");
+                string name = Console.ReadLine();
+                Console.WriteLine("Введите код города");
+                long cityCode = System.Convert.ToInt64(Console.ReadLine());
+                var tc = new TelephoneContact(cityCode, name);
+                cd.ChangeCardName(name);
+                cd.ChangeCardSynCode(cityCode);
+                cd.AddContactToCardList(cardList);
+                return "Контакт создан!\n" + tc.ToString();
+            }
+            catch (Exception er)
+            {
+                return (er.Message);
+            }
+        }
+
+        // Метод создания новой карточки, которую можно заполнить
+        private static void AddCard(List<string> cardList)
+        {
+            try
+            {
+                Console.WriteLine("Введите SynCode карточки:");
+                var synCode = System.Convert.ToInt64(Console.ReadLine());
+                Console.WriteLine("Введите Name карточки:");
+                var name = Console.ReadLine();
+                var newCard = new Card(synCode, name);
+                newCard.AddContactToCardList(cardList);
+            }
+            catch (ArgumentNullException anEr)
+            {
+                Console.WriteLine(anEr.Message);
+            }
+            catch (ArgumentException aEr)
+            {
+                Console.WriteLine(aEr.Message);
+            }
+            catch (Exception er)
+            {
+                Console.WriteLine(er.Message);
+            }
+
+        }
+
+        // Метод вывода всех контактов
+        private static string DisplayAllCards(List<string> CardList)
+        {
+            var contactList = string.Empty;
+            int i = 0;
+            foreach (var card in CardList)
+            {
+                contactList = contactList + string.Format("Contact id - {0}, concact name - {1}\n", i, card);
+                i++;
+            }
+            return contactList;
+        }
+
+        // Метод создания карточки, вызывается незаполненная форма
+        private static Card createCard()
+        { 
+            var newCard = new Card();
+            return newCard;
+        }
+
+        // Метод создания mail контакта
+        private static string createMailCard(List<string> cardList)
+        {
+            try
+            {
+                var cd = createCard();
+                Console.WriteLine("Введите имя контакта");
+                string _name = Console.ReadLine();
+                Console.WriteLine("Введите e-mail контакта");
+                string _mail = Console.ReadLine();
+                Mail mc = new Mail(_mail, _name);
+                cd.ChangeCardName(string.Format("mailto: ({0}), name - {1}", _mail, _name));
+                cd.AddContactToCardList(cardList);
+                return "Контакт создан!\n" + mc.ToString();
+            }
+            catch (Exception er)
+            {
+                return (er.Message);
+            }
+        }
+
+        // Метод изменения карточки
+        private static void ModifyCard(List<string> cardList)
+        {
+            Console.WriteLine("Введите Id карточки, которую хотите изменить");
+            try
+            {
+                int id = System.Convert.ToInt32(Console.ReadLine());
+                if ((id >= 0) && (id < cardList.Count))
+                {
+                    Console.WriteLine("Введите новое значение карточки");
+                    var newValue = Console.ReadLine();
+                    if (newValue != string.Empty)
+                    {
+                        cardList[id] = Console.ReadLine();
+                        Console.WriteLine("Карточка изменена");
+                    }
+                    else 
+                        throw new Exception("Имя контакта не может быть пустым");
+                }
+
+                else
+                    throw new Exception(string.Format("Контакт с Id = {0} не существует", id));
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Введенное значение не соответсвует формату числа!");
+                Console.ReadKey();
+            }
+            catch (Exception er)
+            {
+                Console.WriteLine(er.Message);
+            }
+        }
+
+        //Метод удаления карточки
+        private static void DeleteContact(List<string> cardList)
+        {
+            Console.WriteLine("Введите Id карточки, которую хотите удалить");
+            try
+            {
+                int id = System.Convert.ToInt32(Console.ReadLine());
+                var emptyCard = new Card();
+                var result = emptyCard.DeleteCard(id, cardList);
+                Console.WriteLine(result);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Введенное значение не соответсвует формату числа!");
+                Console.ReadKey();
             }
         }
     }

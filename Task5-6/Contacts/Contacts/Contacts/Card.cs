@@ -9,22 +9,47 @@ namespace Contacts
     {
         private string _name;
         private long SynCode;
-        private long Id;
-        public Card(long id, long synCode, string name)
+
+        public Card(long synCode, string name)
         {
-            Id = id;
-            SynCode = synCode;
-            _name = name;
+            if (synCode <= 0)
+            {
+                throw new ArgumentException("SynCode не может быть отрицательным или равен нулю.");
+            }
+            else
+                SynCode = synCode;
+            
             if (name == string.Empty)
             {
                 throw new System.ArgumentNullException("Имя контакта не может быть пустым");
             }
+            else
+                _name = name;
         }
         public Card()
         {
-            Id = 1;
             SynCode = 1;
             _name = "New project";
+        }
+
+        public void ChangeCardSynCode(long newSynCode)
+        {
+            if (newSynCode > 0)
+            {
+                SynCode = newSynCode;
+            }
+            else
+                throw new ArgumentException("SynCode не может быть отрицательным или равен нулю.");
+        }
+
+        public void ChangeCardName(string name)
+        {
+            if (name != string.Empty)
+            {
+                _name = name;
+            }
+            else
+                throw new ArgumentException("Имя контакта не может быть пустым");
         }
 
         public int CompareTo(Card card)
@@ -42,19 +67,7 @@ namespace Contacts
         {
             return MemberwiseClone();
         }
-        /*
-        public override object Clone()
-        {
-            MyType res = (MyType)Cloner.Clone(this);
-            res.SetContext(myContext);
-            return res;
-        }*/
-        public long ChangeProjectId()
-        {
-            if ((Id == 0) || (Id - SynCode != 100))
-                Id = SynCode + 100;
-            return Id;
-        }
+
         public string GetProjectName()
         {
             if (_name != "New project")
@@ -70,45 +83,30 @@ namespace Contacts
 
         public string GetProjectInfo()
         {
-            return string.Format("Проект {0}, id={1}, SynCode={2}", _name, Id, SynCode);
+            return string.Format("Проект {0}, SynCode={1}", _name, SynCode);
         }
         public void ChangeDeletedProject()
         {
             _name = _name + "_DELETED";
         }
-
-        public Dictionary<long, string> AddContactToCardList(Dictionary<long, string> CardList)
+        
+        public List<string> AddContactToCardList(List<string> CardList)
         {
-            var contactName = string.Format("SynCode = {0}, Contact Name = {1}", _name, SynCode);
-            CardList.Add(Id, contactName);
+            var contactName = string.Format("SynCode = {0}, Contact Name = {1}", SynCode, _name);
+            CardList.Add(contactName);
             return CardList;
         }
-        public string DeleteContact(long id, Dictionary<long, string> CardList)
+        public string DeleteCard(int id, List<string> CardList)
         {
             string result = "";
-            foreach (var card in CardList)
+            if ((id >= 0) && (id < CardList.Count))
             {
-                if (card.Key == id)
-                {
-                    CardList.Remove(card.Key);
-                    result = "Контакт удален";
-                    break;
-                }
+                CardList.RemoveAt(id);
+                result = "Контакт удален";
             }
-            if (result != "Контакт удален")
-                result = "Такой контакт не найден";
+            else
+                result = string.Format("Контакт с Id = {0} не найден", id);
             return result;
         }
-
-        public string ShowAllContacts(Dictionary<long, string> CardList)
-        {
-            var contactList = string.Empty;
-            foreach (var card in CardList)
-            {
-                contactList = contactList + string.Format("Contact number - {0}, concact name - {1}", card.Key, card.Value);
-            }
-            return contactList;
-        }
-        
     }
 }
