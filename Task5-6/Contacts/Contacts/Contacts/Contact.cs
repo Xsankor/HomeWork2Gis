@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Linq;
 
 namespace Contacts
 {
@@ -29,6 +30,12 @@ namespace Contacts
         public override string ToString()
         {
             return string.Format("Contact Name: {0}", ContactName);
+        }
+        
+        public XElement ToXml()
+        {
+            XElement xmlContact = new XElement("Contacts", new XAttribute("Contact Name", ContactName));
+            return xmlContact;
         }
     }
 }

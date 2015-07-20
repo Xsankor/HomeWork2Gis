@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Linq;
 
 namespace Contacts
 {
@@ -96,6 +97,7 @@ namespace Contacts
             CardList.Add(contactName);
             return CardList;
         }
+
         public string DeleteCard(int id, List<string> CardList)
         {
             string result = "";
@@ -108,5 +110,16 @@ namespace Contacts
                 result = string.Format("Контакт с Id = {0} не найден", id);
             return result;
         }
+
+        public XElement ToXml()
+        {
+            XElement xmlContact = new XElement("Card", new XElement("SynCode",
+                new XAttribute("Value", SynCode)),
+                new XElement("Name",
+                     new XAttribute("Value", _name)));
+
+            return xmlContact;
+        }
+
     }
 }

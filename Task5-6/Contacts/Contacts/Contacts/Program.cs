@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 using Contacts;
 
@@ -13,8 +14,9 @@ namespace Contacts
         {
             List<string> CardList = new List<string>
             {
-                "SynCode = 123, Contact Name = Anna Petrova",
-                "SynCode = 103, Contact Name = J Stark"
+                "SynCode = 123, mailto: (testLe@mail.ru), Contact Name = Lee Smith",
+                "SynCode = 103, Contact Name = J Stark",
+                "SynCode = 189, mailto: (testDoe@mail.ru), Contact Name = John Doe"
             };
 
             string answer = "";
@@ -25,7 +27,8 @@ namespace Contacts
                     + "2. Изменить карточку, хранящуюся в списке контактов\n"
                     + "3. Добавить контакт к карточке\n"
                     + "4. Удалить карточку, хранящуюся в списке контактов\n"
-                    + "5. Вывести все карточки на экран\n");
+                    + "5. Вывести все карточки на экран\n"
+                    + "6. Добавить контакты в базу");
 
                 answer = Console.ReadLine();
                 switch (answer)
@@ -78,9 +81,14 @@ namespace Contacts
                             Console.WriteLine(allCards + '\n');
                             break;
                         }
+                    case "6":
+                        {
+                            SaveInFile(CardList);
+                            break;
+                        }
                     default:
                         {
-                            Console.WriteLine("Введенное значение отличается от 1, 2!");
+                            Console.WriteLine("Введенное значение отличается от 1-6!");
                             break;
                         }
                 }
@@ -104,6 +112,7 @@ namespace Contacts
                 cd.AddContactToCardList(cardList);
                 return "Контакт создан!\n" + tc.ToString();
             }
+
             catch (Exception er)
             {
                 return (er.Message);
@@ -121,6 +130,7 @@ namespace Contacts
                 var name = Console.ReadLine();
                 var newCard = new Card(synCode, name);
                 newCard.AddContactToCardList(cardList);
+                Console.WriteLine("Карточка добавлена.");
             }
             catch (ArgumentNullException anEr)
             {
@@ -144,7 +154,7 @@ namespace Contacts
             int i = 0;
             foreach (var card in CardList)
             {
-                contactList = contactList + string.Format("Contact id - {0}, concact name - {1}\n", i, card);
+                contactList = contactList + string.Format("Contact id - {0}, {1}\n", i, card);
                 i++;
             }
             return contactList;
@@ -168,7 +178,7 @@ namespace Contacts
                 Console.WriteLine("Введите e-mail контакта");
                 string _mail = Console.ReadLine();
                 Mail mc = new Mail(_mail, _name);
-                cd.ChangeCardName(string.Format("mailto: ({0}), name - {1}", _mail, _name));
+                cd.ChangeCardName(string.Format("mailto: ({0}), Contact Name - {1}", _mail, _name));
                 cd.AddContactToCardList(cardList);
                 return "Контакт создан!\n" + mc.ToString();
             }
@@ -228,6 +238,31 @@ namespace Contacts
                 Console.WriteLine("Введенное значение не соответсвует формату числа!");
                 Console.ReadKey();
             }
+        }
+
+        // Метод добавления списка карточек в файл contacts.txt
+        private static void SaveInFile(List<string> cardList)
+        {
+            string path = "C:\\Temp\\contacts.txt";
+            File.AppendAllLines(path, cardList);
+            Console.WriteLine("Список контактов, хранящихся в базе:");
+
+            StreamReader sr = new StreamReader(path);
+
+            try
+            {
+                string text = sr.ReadToEnd();
+                Console.WriteLine(text);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                sr.Dispose();
+            }
+
         }
     }
 }
