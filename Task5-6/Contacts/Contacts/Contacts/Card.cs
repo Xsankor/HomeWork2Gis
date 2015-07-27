@@ -10,6 +10,8 @@ namespace Contacts
     {
         private string _name;
         private long SynCode;
+        private long Id;
+        public List<Contact> ContactList = new List<Contact>();
 
         public Card(long synCode, string name)
         {
@@ -62,8 +64,8 @@ namespace Contacts
                 return this.SynCode.CompareTo(otherCard.SynCode);
             else
                 throw new ArgumentException("Object is not a Card");
-
         }
+
         public object Clone()
         {
             return MemberwiseClone();
@@ -91,19 +93,53 @@ namespace Contacts
             _name = _name + "_DELETED";
         }
         
-        public List<string> AddContactToCardList(List<string> CardList)
+        
+        public List<Card> AddCardToCardList(List<Card> CardList, Card newCard)
         {
-            var contactName = string.Format("SynCode = {0}, Contact Name = {1}", SynCode, _name);
-            CardList.Add(contactName);
+            newCard.Id = CardList.Count + 1;
+            CardList.Add(newCard);
             return CardList;
         }
 
-        public string DeleteCard(int id, List<string> CardList)
+        public Card AddMailContactToCard(Mail mailContact, Card card)
+        {
+            card.ContactList.Add(mailContact);
+            return card;
+        }
+
+        public Card AddTelephoneContactToCard(TelephoneContact telephoneContact, Card card)
+        {
+            card.ContactList.Add(telephoneContact);
+            return card;
+        }
+
+        public Card GetCardById(List<Card> cardList, long id)
+        {
+            return (from c in cardList where c.Id == id select c).FirstOrDefault();
+        }
+
+        public long GetIdByCard(Card card)
+        {
+            return card.Id;
+        }
+
+        public string GetNameByCard(Card card)
+        {
+            return card._name;
+        }
+
+        public long GetSynCodeByCard(Card card)
+        {
+            return card.SynCode;
+        }
+
+        public string DeleteCard(long id, List<Card> CardList)
         {
             string result = "";
-            if ((id >= 0) && (id < CardList.Count))
+            if ((id >= 0) && (id <= CardList.Count))
             {
-                CardList.RemoveAt(id);
+                Card deletedCard = GetCardById(CardList, id);
+                CardList.Remove(deletedCard);
                 result = "Контакт удален";
             }
             else
@@ -113,12 +149,14 @@ namespace Contacts
 
         public XElement ToXml()
         {
-            XElement xmlContact = new XElement("Card", new XElement("SynCode",
-                new XAttribute("Value", SynCode)),
+            XElement xmlCard = new XElement("Card", 
+                new XElement("Id", 
+                    new XAttribute("Value", Id)),
+                new XElement("SynCode", 
+                    new XAttribute("Value", SynCode)),
                 new XElement("Name",
                      new XAttribute("Value", _name)));
-
-            return xmlContact;
+            return xmlCard;
         }
 
     }

@@ -16,6 +16,17 @@ namespace Contacts
             mail = _mail;
         }
 
+        public int CompareTo(Mail mailContact)
+        {
+            if (mailContact == null) return 1;
+
+            Mail otherMailContact = mailContact as Mail;
+            if (otherMailContact != null)
+                return this.mail.CompareTo(otherMailContact.mail);
+            else
+                throw new ArgumentException("Object is not a MailContact");
+        }
+
         public override string ToString()
         {
             return string.Format("Contact - mailto: ({0}), name - {1}", mail, ContactName);

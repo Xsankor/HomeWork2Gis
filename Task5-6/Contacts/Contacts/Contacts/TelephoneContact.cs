@@ -15,6 +15,17 @@ namespace Contacts
             ZoneCode = zoneCode;
         }
 
+        public int CompareTo(TelephoneContact phoneContact)
+        {
+            if (phoneContact == null) return 1;
+
+            TelephoneContact otherPhoneContact = phoneContact as TelephoneContact;
+            if (otherPhoneContact != null)
+                return this.ZoneCode.CompareTo(otherPhoneContact.ZoneCode);
+            else
+                throw new ArgumentException("Object is not a TelephoneContact");
+        }
+
         public override string ToString()
         {
             return string.Format("Contact - Number: {0}, name - {1}",  ZoneCode, ContactName);

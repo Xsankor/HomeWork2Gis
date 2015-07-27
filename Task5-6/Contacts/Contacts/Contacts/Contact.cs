@@ -34,7 +34,7 @@ namespace Contacts
         
         public XElement ToXml()
         {
-            XElement xmlContact = new XElement("Contacts", new XAttribute("Contact Name", ContactName));
+            XElement xmlContact = new XElement("Contacts", new XAttribute("Name", ContactName));
             return xmlContact;
         }
     }
