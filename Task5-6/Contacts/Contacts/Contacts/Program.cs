@@ -15,11 +15,11 @@ namespace Contacts
             List<Card> CardList = new List<Card>();
             // Заполняем список карточек
             var defaultCard = new Card(118, "Lee Smith");
-            defaultCard.AddCardToCardList(CardList, defaultCard);
+            AddCardToCardList(CardList, defaultCard);
             defaultCard = new Card(119, "J Stark");
-            defaultCard.AddCardToCardList(CardList, defaultCard);
+            AddCardToCardList(CardList, defaultCard);
             defaultCard = new Card(120, "John Doe");
-            defaultCard.AddCardToCardList(CardList, defaultCard);
+            AddCardToCardList(CardList, defaultCard);
 
             string answer = "";
             for (int i = 0; answer != "0"; i++)
@@ -79,7 +79,7 @@ namespace Contacts
                         }
                     case "5":
                         {
-                            DeleteContact(CardList);
+                            DeleteCard(CardList);
                             break;
                             
                         }
@@ -116,13 +116,17 @@ namespace Contacts
                 if ((id >= 1) && (id <= cardList.Count))
                 {
                     var cd = new Card();
-                    cd = cd.GetCardById(cardList, id);
+                    cd = GetCardById(cardList, id);
                     Console.WriteLine("Введите имя контакта");
                     string name = Console.ReadLine();
                     Console.WriteLine("Введите код города");
                     long cityCode = System.Convert.ToInt64(Console.ReadLine());
                     var tc = new TelephoneContact(cityCode, name);
                     cd.AddTelephoneContactToCard(tc, cd);
+
+                    var v = cd.Clone();
+                    DeleteCardsContact(cardList);
+
                     return "Контакт добавлен!\n" + tc.ToString();
                 }
                 else
@@ -145,7 +149,7 @@ namespace Contacts
                 Console.WriteLine("Введите Name карточки:");
                 var name = Console.ReadLine();
                 var newCard = new Card(synCode, name);
-                newCard.AddCardToCardList(cardList, newCard);
+                AddCardToCardList(cardList, newCard);
                 Console.WriteLine("Карточка добавлена.");
             }
             catch (ArgumentNullException anEr)
@@ -161,6 +165,14 @@ namespace Contacts
                 Console.WriteLine(er.Message);
             }
 
+        }
+
+        // Метод добавления созданной карточки в список
+        private static List<Card> AddCardToCardList(List<Card> CardList, Card newCard)
+        {
+            newCard.GenerateCardId((long)CardList.Count);
+            CardList.Add(newCard);
+            return CardList;
         }
 
         // Метод вывода всех контактов
@@ -203,7 +215,7 @@ namespace Contacts
                 if ((id >= 1) && (id <= cardList.Count))
                 {
                     var cd = new Card();
-                    cd = cd.GetCardById(cardList, id);
+                    cd = GetCardById(cardList, id);
                     Console.WriteLine("Введите имя контакта");
                     string _name = Console.ReadLine();
                     Console.WriteLine("Введите e-mail контакта");
@@ -231,7 +243,7 @@ namespace Contacts
                 if ((id >= 0) && (id <= cardList.Count))
                 {
                     var cd = new Card();
-                    cd = cd.GetCardById(cardList, id);
+                    cd = GetCardById(cardList, id);
                     Console.WriteLine("Введите параметр карточки, который хотите изменить - SynCode или Name");
                     string answer = Console.ReadLine();
                     switch (answer)
@@ -278,14 +290,22 @@ namespace Contacts
         }
 
         // Метод удаления карточки
-        private static void DeleteContact(List<Card> cardList)
+        private static void DeleteCard(List<Card> cardList)
         {
             Console.WriteLine("Введите Id карточки, которую хотите удалить");
             try
             {
                 long id = System.Convert.ToInt64(Console.ReadLine());
-                var card = new Card();
-                var result = card.DeleteCard(id, cardList);
+                var result = string.Empty;
+                if ((id >= 0) && (id <= cardList.Count))
+                {
+                    var deletedCard = GetCardById(cardList, id);
+                    cardList.Remove(deletedCard);
+                    result = "Контакт удален";
+                }
+                else
+                    result = string.Format("Контакт с Id = {0} не найден", id);
+                
                 Console.WriteLine(result);
             }
             catch (FormatException)
@@ -293,6 +313,12 @@ namespace Contacts
                 Console.WriteLine("Введенное значение не соответсвует формату числа!");
                 Console.ReadKey();
             }
+        }
+
+        // Метод поиска карточки в CardList по Id
+        private static Card GetCardById(List<Card> cardList, long id)
+        {
+            return (from c in cardList where c.GetIdByCard(c) == id select c).FirstOrDefault();
         }
 
         // Метод удаления у карточки контактов
@@ -305,7 +331,7 @@ namespace Contacts
                 if ((id >= 0) && (id <= cardList.Count))
                 {
                     var card = new Card();
-                    card = card.GetCardById(cardList, id);
+                    card = GetCardById(cardList, id);
                      var contactCount = card.ContactList.Count;
                     if (contactCount == 0)
                     {

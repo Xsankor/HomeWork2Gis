@@ -68,7 +68,9 @@ namespace Contacts
 
         public object Clone()
         {
-            return MemberwiseClone();
+            Card newCard = (Card)this.MemberwiseClone();
+            newCard.ContactList = new List<Contact>(this.ContactList);
+            return newCard;
         }
 
         public string GetProjectName()
@@ -92,13 +94,11 @@ namespace Contacts
         {
             _name = _name + "_DELETED";
         }
-        
-        
-        public List<Card> AddCardToCardList(List<Card> CardList, Card newCard)
+
+        public long GenerateCardId(long number)
         {
-            newCard.Id = CardList.Count + 1;
-            CardList.Add(newCard);
-            return CardList;
+            Id = number + 1;
+            return Id;
         }
 
         public Card AddMailContactToCard(Mail mailContact, Card card)
@@ -111,11 +111,6 @@ namespace Contacts
         {
             card.ContactList.Add(telephoneContact);
             return card;
-        }
-
-        public Card GetCardById(List<Card> cardList, long id)
-        {
-            return (from c in cardList where c.Id == id select c).FirstOrDefault();
         }
 
         public long GetIdByCard(Card card)
@@ -131,20 +126,6 @@ namespace Contacts
         public long GetSynCodeByCard(Card card)
         {
             return card.SynCode;
-        }
-
-        public string DeleteCard(long id, List<Card> CardList)
-        {
-            string result = "";
-            if ((id >= 0) && (id <= CardList.Count))
-            {
-                Card deletedCard = GetCardById(CardList, id);
-                CardList.Remove(deletedCard);
-                result = "Контакт удален";
-            }
-            else
-                result = string.Format("Контакт с Id = {0} не найден", id);
-            return result;
         }
 
         public XElement ToXml()

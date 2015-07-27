@@ -3,5 +3,3 @@ B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\bin\Debug\Co
 B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\obj\x86\Debug\Contacts.exe
 B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\obj\x86\Debug\Contacts.pdb
 B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\obj\x86\Debug\Contacts.csprojResolveAssemblyReference.cache
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Contacts\obj\x86\Debug\Contacts.exe
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Contacts\obj\x86\Debug\Contacts.pdb
