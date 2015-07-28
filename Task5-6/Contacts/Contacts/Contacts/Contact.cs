@@ -17,7 +17,7 @@ namespace Contacts
         public Contact()
         {
         }
-        public int CompareTo(Contact ct)
+        public int CompareTo(Contact ct) 
         {
             if (ct == null) return 1;
 

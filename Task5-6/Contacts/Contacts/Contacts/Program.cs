@@ -123,10 +123,6 @@ namespace Contacts
                     long cityCode = System.Convert.ToInt64(Console.ReadLine());
                     var tc = new TelephoneContact(cityCode, name);
                     cd.AddTelephoneContactToCard(tc, cd);
-
-                    var v = cd.Clone();
-                    DeleteCardsContact(cardList);
-
                     return "Контакт добавлен!\n" + tc.ToString();
                 }
                 else
@@ -164,7 +160,6 @@ namespace Contacts
             {
                 Console.WriteLine(er.Message);
             }
-
         }
 
         // Метод добавления созданной карточки в список

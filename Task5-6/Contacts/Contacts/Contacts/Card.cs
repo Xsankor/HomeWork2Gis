@@ -86,15 +86,6 @@ namespace Contacts
             return _name;
         }
 
-        public string GetProjectInfo()
-        {
-            return string.Format("Проект {0}, SynCode={1}", _name, SynCode);
-        }
-        public void ChangeDeletedProject()
-        {
-            _name = _name + "_DELETED";
-        }
-
         public long GenerateCardId(long number)
         {
             Id = number + 1;
