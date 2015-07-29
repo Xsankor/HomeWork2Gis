@@ -1,0 +1,4 @@
+B:\студия\Курсы C#\Task4\Data\Task8\Task8\bin\Debug\Task8.exe
+B:\студия\Курсы C#\Task4\Data\Task8\Task8\bin\Debug\Task8.pdb
+B:\студия\Курсы C#\Task4\Data\Task8\Task8\obj\x86\Debug\Task8.exe
+B:\студия\Курсы C#\Task4\Data\Task8\Task8\obj\x86\Debug\Task8.pdb
