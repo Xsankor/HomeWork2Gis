@@ -21,6 +21,10 @@ namespace Contacts
             defaultCard = new Card(120, "John Doe");
             AddCardToCardList(CardList, defaultCard);
 
+            // Выборка контактов 
+            IEnumerable<Contact> queryMailContactsInRuDomen = CardList.OfType<Mail>().Where(ct => ct.mail.Contains(".ru"));
+            IEnumerable<Contact> queryPhoneContacts = CardList.OfType<TelephoneContact>().OrderBy(tel => tel.ContactName);
+
             string answer = "";
             for (int i = 0; answer != "0"; i++)
             {
@@ -57,7 +61,6 @@ namespace Contacts
                                 "1. Создать телефонный контакт;\n"
                                 + "2. Создать mail контакт\n");
                             var answerAddContact = Console.ReadLine();
-                            //string newContact = string.Empty;
                             switch (answerAddContact)
                             {
                                 case "1":

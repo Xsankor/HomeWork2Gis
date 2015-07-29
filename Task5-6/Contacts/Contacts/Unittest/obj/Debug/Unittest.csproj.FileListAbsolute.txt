@@ -5,12 +5,3 @@ B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\obj\Debug\Un
 B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\bin\Debug\Contacts.exe
 B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\bin\Debug\Contacts.pdb
 B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\obj\Debug\Unittest.csprojResolveAssemblyReference.cache
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Unittest\bin\Debug\Unittest.dll
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Unittest\bin\Debug\Unittest.pdb
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Unittest\bin\Debug\Contacts.exe
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Unittest\bin\Debug\Contacts.pdb
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Unittest\obj\Debug\Unittest.csprojResolveAssemblyReference.cache
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Unittest\obj\Debug\Unittest.dll
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Unittest\obj\Debug\Unittest.pdb
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Unittest\bin\Debug\Unittest.dll.CodeAnalysisLog.xml
-B:\Тестирование\C#\Репозитарий\Task5-6\Contacts\Contacts\Unittest\bin\Debug\Unittest.dll.lastcodeanalysissucceeded
