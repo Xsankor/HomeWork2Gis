@@ -7,7 +7,7 @@ namespace Task8
 {
     public static class ArrayExtensions
     {
-        public static string Print(int[] array, char cyrsor)
+        public static string Print(this int[] array, char cyrsor)
         {
             var result = string.Empty;
             foreach (var element in array)
