@@ -1,0 +1,7 @@
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\bin\Debug\Unittest.dll
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\bin\Debug\Unittest.pdb
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\obj\Debug\Unittest.dll
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\obj\Debug\Unittest.pdb
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\bin\Debug\Contacts.exe
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\bin\Debug\Contacts.pdb
+B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\obj\Debug\Unittest.csprojResolveAssemblyReference.cache

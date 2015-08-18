@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6ea77eeb-8bcc-494d-9d39-699d1e61b504" name="fora@DELL 2015-08-18 02:40:49" runUser="dell\fora" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ae7f9b34-cdf6-4f5e-886b-aeb8da462ab8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="fora_DELL 2015-08-18 02_40_49">
+      <DeploymentItem filename="B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\bin\Debug\Contacts.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-08-18T02:40:49.3672777+06:00" queuing="2015-08-18T02:40:50.4852281+06:00" start="2015-08-18T02:40:50.5943072+06:00" finish="2015-08-18T02:41:11.0775628+06:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DELL" outcome="Error" timestamp="2015-08-18T02:41:11.0765615+06:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CompareToTest_CheckException" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="b44bf94d-e61d-3577-c93d-9a061e5b603c">
+      <Execution id="13ad1f00-e834-497c-b487-e86992e089c3" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToTest_CheckException" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b44bf94d-e61d-3577-c93d-9a061e5b603c" executionId="13ad1f00-e834-497c-b487-e86992e089c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="13ad1f00-e834-497c-b487-e86992e089c3" testId="b44bf94d-e61d-3577-c93d-9a061e5b603c" testName="CompareToTest_CheckException" computerName="DELL" duration="00:00:20.3871892" startTime="2015-08-18T02:40:50.6903736+06:00" endTime="2015-08-18T02:41:11.0775628+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13ad1f00-e834-497c-b487-e86992e089c3">
+    </UnitTestResult>
+  </Results>
+</TestRun>

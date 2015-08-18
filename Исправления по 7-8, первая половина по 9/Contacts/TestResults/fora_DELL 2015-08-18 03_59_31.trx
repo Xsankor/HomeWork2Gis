@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f185a91b-abea-4de0-9367-ec424a29c2c8" name="fora@DELL 2015-08-18 03:59:31" runUser="dell\fora" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ae7f9b34-cdf6-4f5e-886b-aeb8da462ab8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="fora_DELL 2015-08-18 03_59_31">
+      <DeploymentItem filename="B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\bin\Debug\Contacts.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-08-18T03:59:31.3179346+06:00" queuing="2015-08-18T03:59:32.4794080+06:00" start="2015-08-18T03:59:32.5954887+06:00" finish="2015-08-18T04:00:08.9984175+06:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DELL" outcome="Error" timestamp="2015-08-18T04:00:08.9974162+06:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CardConstructorTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="9783d49a-4dee-7cba-5d48-12a02eed8012">
+      <Execution id="dcff023f-6346-4309-9b48-c6b538cd3d8e" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CardConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9783d49a-4dee-7cba-5d48-12a02eed8012" executionId="dcff023f-6346-4309-9b48-c6b538cd3d8e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="dcff023f-6346-4309-9b48-c6b538cd3d8e" testId="9783d49a-4dee-7cba-5d48-12a02eed8012" testName="CardConstructorTest" computerName="DELL" duration="00:00:36.3118652" startTime="2015-08-18T03:59:32.6865523+06:00" endTime="2015-08-18T04:00:08.9984175+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dcff023f-6346-4309-9b48-c6b538cd3d8e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

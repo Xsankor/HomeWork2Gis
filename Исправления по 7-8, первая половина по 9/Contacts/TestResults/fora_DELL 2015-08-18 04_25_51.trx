@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2afb9d39-3626-4804-8a0f-e099a26b50f6" name="fora@DELL 2015-08-18 04:25:51" runUser="dell\fora" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ae7f9b34-cdf6-4f5e-886b-aeb8da462ab8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="fora_DELL 2015-08-18 04_25_51">
+      <DeploymentItem filename="B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\bin\Debug\Contacts.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-08-18T04:25:51.2734776+06:00" queuing="2015-08-18T04:25:52.6166725+06:00" start="2015-08-18T04:25:52.7247488+06:00" finish="2015-08-18T04:26:25.6765152+06:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ChangeCardSynCodeTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="aa8c2d19-253f-c02b-2e44-942bffdbc258">
+      <Execution id="c29af9c4-48e8-4948-bc23-55985e5585e4" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangeCardSynCodeTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="aa8c2d19-253f-c02b-2e44-942bffdbc258" executionId="c29af9c4-48e8-4948-bc23-55985e5585e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c29af9c4-48e8-4948-bc23-55985e5585e4" testId="aa8c2d19-253f-c02b-2e44-942bffdbc258" testName="ChangeCardSynCodeTest" computerName="DELL" duration="00:00:31.9613219" startTime="2015-08-18T04:25:52.8188183+06:00" endTime="2015-08-18T04:26:25.5934565+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c29af9c4-48e8-4948-bc23-55985e5585e4">
+    </UnitTestResult>
+  </Results>
+</TestRun>

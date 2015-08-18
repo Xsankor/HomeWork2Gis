@@ -1,0 +1,3 @@
+SynCode = 123, mailto: (testLe@mail.ru), Contact Name = Lee Smith
+SynCode = 103, Contact Name = J Stark
+SynCode = 189, mailto: (testDoe@mail.ru), Contact Name = John Doe

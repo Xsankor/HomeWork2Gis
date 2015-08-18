@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2901da80-79a9-41ad-ae9b-5ae12cebb3f7" name="fora@DELL 2015-08-18 02:42:20" runUser="dell\fora" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ae7f9b34-cdf6-4f5e-886b-aeb8da462ab8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="fora_DELL 2015-08-18 02_42_20">
+      <DeploymentItem filename="B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\bin\Debug\Contacts.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-08-18T02:42:20.3616880+06:00" queuing="2015-08-18T02:42:21.3938482+06:00" start="2015-08-18T02:42:21.5039255+06:00" finish="2015-08-18T02:42:33.3123597+06:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CompareToTest_CheckException" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="b44bf94d-e61d-3577-c93d-9a061e5b603c">
+      <Execution id="81c04f56-0d1a-48c6-a7e4-9af5f51841c8" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToTest_CheckException" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b44bf94d-e61d-3577-c93d-9a061e5b603c" executionId="81c04f56-0d1a-48c6-a7e4-9af5f51841c8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="81c04f56-0d1a-48c6-a7e4-9af5f51841c8" testId="b44bf94d-e61d-3577-c93d-9a061e5b603c" testName="CompareToTest_CheckException" computerName="DELL" duration="00:00:10.8519978" startTime="2015-08-18T02:42:21.6131156+06:00" endTime="2015-08-18T02:42:33.2122886+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81c04f56-0d1a-48c6-a7e4-9af5f51841c8">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Unittest.CardTest.CompareToTest_CheckException threw exception System.ArgumentNullException, but exception System.NullReferenceException was expected. Exception message: System.ArgumentNullException: Значение не может быть неопределенным.
+Имя параметра: Object is not a Card</Message>
+          <StackTrace>    в Contacts.Card.CompareTo(Card card) в B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\Card.cs:строка 66
+   в Unittest.CardTest.CompareToTest_CheckException() в B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Unittest\CardTest.cs:строка 195
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

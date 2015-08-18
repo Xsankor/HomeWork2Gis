@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3095df90-5854-4863-978f-51f0d6b23a40" name="fora@DELL 2015-08-18 02:30:02" runUser="dell\fora" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ae7f9b34-cdf6-4f5e-886b-aeb8da462ab8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="fora_DELL 2015-08-18 02_30_02">
+      <DeploymentItem filename="B:\студия\Курсы C#\Task4\Data\Contacts\Contacts\Contacts\bin\Debug\Contacts.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-08-18T02:30:02.4597929+06:00" queuing="2015-08-18T02:30:02.5372343+06:00" start="2015-08-18T02:30:02.5482433+06:00" finish="2015-08-18T02:30:03.0968403+06:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="30" executed="30" passed="30" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddTelephoneContactToCardTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="2ef7844d-340b-4036-2692-f9e6b47ceec5">
+      <Execution id="e4bc8baa-4764-4d18-b3e0-82ba74be63dc" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddTelephoneContactToCardTest" />
+    </UnitTest>
+    <UnitTest name="ChangeCardSynCodeTest_CheckSynCodeIsZeroException" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="dfd0ef85-908a-c826-bb07-b9eeaba81ceb">
+      <Execution id="ff56e04d-85a6-4a9e-8fbc-88c299e576a0" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangeCardSynCodeTest_CheckSynCodeIsZeroException" />
+    </UnitTest>
+    <UnitTest name="ChangeCardSynCodeTest_CheckSynCodeIsNegativeException" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="19074d93-ae85-cada-5799-e2c8a2c8421c">
+      <Execution id="6d5ca028-901a-4b58-9ac5-61e738c8e2e7" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangeCardSynCodeTest_CheckSynCodeIsNegativeException" />
+    </UnitTest>
+    <UnitTest name="MailConstructorTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="3c3d88f7-73e4-7d94-267a-40d72833f51f">
+      <Execution id="9aab3cbe-1cef-4ded-8a3d-dd028eccabe8" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.MailTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MailConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ChangeCardNameTest_CheckNameEmptyException" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="bb9dd28b-c4c3-c7d7-57b9-f57164bc92e2">
+      <Execution id="fc0be9be-9ab5-4fad-bd22-93bf8918d64d" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangeCardNameTest_CheckNameEmptyException" />
+    </UnitTest>
+    <UnitTest name="ChangeCardSynCodeTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="aa8c2d19-253f-c02b-2e44-942bffdbc258">
+      <Execution id="2db3cb2e-4eeb-4251-a16b-376620046740" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangeCardSynCodeTest" />
+    </UnitTest>
+    <UnitTest name="CardConstructorTest_CheckSynCodeIsZeroException" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="5493fc41-1c33-f4a7-4664-27f588b206f2">
+      <Execution id="f463dd4d-0313-4dda-b55e-a22bbbf6f2dd" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CardConstructorTest_CheckSynCodeIsZeroException" />
+    </UnitTest>
+    <UnitTest name="ChangeCardNameTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="dac65389-413c-ed53-9a9b-90898f461cd3">
+      <Execution id="6077630b-f3ca-485a-9dcf-dd6b381eb674" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangeCardNameTest" />
+    </UnitTest>
+    <UnitTest name="CardConstructorTest1" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="af91e490-672f-c1c4-4e48-a1cce844c442">
+      <Execution id="6b75230b-46bc-4136-a63b-da055ec07c5a" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CardConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="ToXmlTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="29c6250f-b6cf-4d68-153d-6d3df6695a0e">
+      <Execution id="8afcb948-1ff2-42cc-a126-3faebf6ccc6a" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToXmlTest" />
+    </UnitTest>
+    <UnitTest name="ToStringTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="f20412a0-6696-ad3a-87c9-c2928186c749">
+      <Execution id="3ade737f-6a5a-48df-b944-34f79ccb9a2c" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.MailTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToStringTest" />
+    </UnitTest>
+    <UnitTest name="AddMailContactToCardTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="209afb1e-649d-c295-b4ea-1e028f1cca87">
+      <Execution id="b8142eb6-c0df-4bb7-9ab0-6609d071888b" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddMailContactToCardTest" />
+    </UnitTest>
+    <UnitTest name="TelephoneContactConstructorTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="abdbe6a4-fef8-75ed-9b7d-8c59f925758d">
+      <Execution id="559f6036-246c-44d8-9f02-1b0e1e3226c4" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.TelephoneContactTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TelephoneContactConstructorTest" />
+    </UnitTest>
+    <UnitTest name="CompareToTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="8cbb983b-4c66-5027-a4c7-4c4426f2d1d0">
+      <Execution id="74ae0c32-a79f-4fcf-868d-91d990687ae4" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.TelephoneContactTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToTest" />
+    </UnitTest>
+    <UnitTest name="GetNameByCardTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="f7e20a1c-0bec-b371-ae2d-827540d3b83f">
+      <Execution id="a9c21832-6173-4260-964a-8c4cd4dc9127" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetNameByCardTest" />
+    </UnitTest>
+    <UnitTest name="CardConstructorTest_CheckNameEmptyException" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="cb35465e-f65e-c08d-4301-04b728801d65">
+      <Execution id="e0310776-0968-4929-91b3-02ae6d8a2ccc" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CardConstructorTest_CheckNameEmptyException" />
+    </UnitTest>
+    <UnitTest name="mailTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="6cdb6060-4471-555b-a876-66f0907f57ec">
+      <Execution id="71da9339-9930-4adb-95ab-adad7191d237" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.MailTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="mailTest" />
+    </UnitTest>
+    <UnitTest name="CompareToTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="4f132f1b-a465-c6fc-b527-fbe83d7a915a">
+      <Execution id="3019c135-6c93-4d7c-808b-a00937116786" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToTest" />
+    </UnitTest>
+    <UnitTest name="ZoneCodeTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="646b689b-9ab6-1480-5951-b68877edaba9">
+      <Execution id="5da9493f-cb8b-4dab-a827-13a4e63a34da" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.TelephoneContactTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ZoneCodeTest" />
+    </UnitTest>
+    <UnitTest name="CloneTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="b4a80ccf-c579-4df5-ab24-56af44cae2bb">
+      <Execution id="19c3c1e0-fe21-4fc3-b4da-a77d57ae2149" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CloneTest" />
+    </UnitTest>
+    <UnitTest name="GetIdByCardTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="28a841fd-6a6d-7b86-2117-e2777e7633c6">
+      <Execution id="9e78d38a-ad46-498e-a46c-ba0ee7e50581" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetIdByCardTest" />
+    </UnitTest>
+    <UnitTest name="ToXmlTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="b2b67615-458f-083a-6284-f0b0f21a9276">
+      <Execution id="492b09a4-a510-4e1e-9343-3f1a78798546" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.MailTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToXmlTest" />
+    </UnitTest>
+    <UnitTest name="CardConstructorTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="9783d49a-4dee-7cba-5d48-12a02eed8012">
+      <Execution id="2b571ad1-6da6-454f-8d0e-efe4ee428a1d" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CardConstructorTest" />
+    </UnitTest>
+    <UnitTest name="CompareToTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="b1307c0c-4ede-56f8-0a33-79c23a6d1c7e">
+      <Execution id="cafa30b5-f445-40c9-942d-cf53c7d8aecb" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.MailTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToTest" />
+    </UnitTest>
+    <UnitTest name="GetSynCodeByCardTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="0fb81736-9d79-20a9-bdc5-c44d06abe806">
+      <Execution id="72347684-b85a-4cbc-8348-806e42a1353c" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetSynCodeByCardTest" />
+    </UnitTest>
+    <UnitTest name="ToXmlTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="9c504600-96cf-f16b-08e3-921d3b83f3ee">
+      <Execution id="5812a2c2-06f0-4780-aa50-3405ba0b3e72" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.TelephoneContactTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToXmlTest" />
+    </UnitTest>
+    <UnitTest name="ToStringTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="adbd554c-1ab7-4ecb-d6fe-51ee5d2695eb">
+      <Execution id="ce141f21-7647-4822-8029-8b1302d74704" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.TelephoneContactTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToStringTest" />
+    </UnitTest>
+    <UnitTest name="CardConstructorTest_CheckSynCodeIsNegativeException" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="529a11b0-e73c-df97-6882-34db669d66d0">
+      <Execution id="178aaea0-8d28-4844-a505-b7ee76f021ac" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CardConstructorTest_CheckSynCodeIsNegativeException" />
+    </UnitTest>
+    <UnitTest name="GenerateCardIdTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="ae673e3c-53d5-97ec-6965-e23b6710e1ff">
+      <Execution id="cbaf3834-2541-41ba-b11e-aee8f65c1811" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateCardIdTest" />
+    </UnitTest>
+    <UnitTest name="GetProjectNameTest" storage="b:\студия\курсы c#\task4\data\contacts\contacts\unittest\bin\debug\unittest.dll" id="b3aced41-42bc-a370-b416-aea49c419ea1">
+      <Execution id="be16148a-4769-4e13-be78-3bba79437333" />
+      <TestMethod codeBase="B:/студия/Курсы C#/Task4/Data/Contacts/Contacts/Unittest/bin/Debug/Unittest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Unittest.CardTest, Unittest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetProjectNameTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0fb81736-9d79-20a9-bdc5-c44d06abe806" executionId="72347684-b85a-4cbc-8348-806e42a1353c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19074d93-ae85-cada-5799-e2c8a2c8421c" executionId="6d5ca028-901a-4b58-9ac5-61e738c8e2e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="209afb1e-649d-c295-b4ea-1e028f1cca87" executionId="b8142eb6-c0df-4bb7-9ab0-6609d071888b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="28a841fd-6a6d-7b86-2117-e2777e7633c6" executionId="9e78d38a-ad46-498e-a46c-ba0ee7e50581" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29c6250f-b6cf-4d68-153d-6d3df6695a0e" executionId="8afcb948-1ff2-42cc-a126-3faebf6ccc6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ef7844d-340b-4036-2692-f9e6b47ceec5" executionId="e4bc8baa-4764-4d18-b3e0-82ba74be63dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3c3d88f7-73e4-7d94-267a-40d72833f51f" executionId="9aab3cbe-1cef-4ded-8a3d-dd028eccabe8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f132f1b-a465-c6fc-b527-fbe83d7a915a" executionId="3019c135-6c93-4d7c-808b-a00937116786" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="529a11b0-e73c-df97-6882-34db669d66d0" executionId="178aaea0-8d28-4844-a505-b7ee76f021ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5493fc41-1c33-f4a7-4664-27f588b206f2" executionId="f463dd4d-0313-4dda-b55e-a22bbbf6f2dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="646b689b-9ab6-1480-5951-b68877edaba9" executionId="5da9493f-cb8b-4dab-a827-13a4e63a34da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6cdb6060-4471-555b-a876-66f0907f57ec" executionId="71da9339-9930-4adb-95ab-adad7191d237" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8cbb983b-4c66-5027-a4c7-4c4426f2d1d0" executionId="74ae0c32-a79f-4fcf-868d-91d990687ae4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9783d49a-4dee-7cba-5d48-12a02eed8012" executionId="2b571ad1-6da6-454f-8d0e-efe4ee428a1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c504600-96cf-f16b-08e3-921d3b83f3ee" executionId="5812a2c2-06f0-4780-aa50-3405ba0b3e72" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa8c2d19-253f-c02b-2e44-942bffdbc258" executionId="2db3cb2e-4eeb-4251-a16b-376620046740" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="abdbe6a4-fef8-75ed-9b7d-8c59f925758d" executionId="559f6036-246c-44d8-9f02-1b0e1e3226c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="adbd554c-1ab7-4ecb-d6fe-51ee5d2695eb" executionId="ce141f21-7647-4822-8029-8b1302d74704" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae673e3c-53d5-97ec-6965-e23b6710e1ff" executionId="cbaf3834-2541-41ba-b11e-aee8f65c1811" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af91e490-672f-c1c4-4e48-a1cce844c442" executionId="6b75230b-46bc-4136-a63b-da055ec07c5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b1307c0c-4ede-56f8-0a33-79c23a6d1c7e" executionId="cafa30b5-f445-40c9-942d-cf53c7d8aecb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2b67615-458f-083a-6284-f0b0f21a9276" executionId="492b09a4-a510-4e1e-9343-3f1a78798546" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3aced41-42bc-a370-b416-aea49c419ea1" executionId="be16148a-4769-4e13-be78-3bba79437333" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4a80ccf-c579-4df5-ab24-56af44cae2bb" executionId="19c3c1e0-fe21-4fc3-b4da-a77d57ae2149" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb9dd28b-c4c3-c7d7-57b9-f57164bc92e2" executionId="fc0be9be-9ab5-4fad-bd22-93bf8918d64d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb35465e-f65e-c08d-4301-04b728801d65" executionId="e0310776-0968-4929-91b3-02ae6d8a2ccc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dac65389-413c-ed53-9a9b-90898f461cd3" executionId="6077630b-f3ca-485a-9dcf-dd6b381eb674" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dfd0ef85-908a-c826-bb07-b9eeaba81ceb" executionId="ff56e04d-85a6-4a9e-8fbc-88c299e576a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f20412a0-6696-ad3a-87c9-c2928186c749" executionId="3ade737f-6a5a-48df-b944-34f79ccb9a2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7e20a1c-0bec-b371-ae2d-827540d3b83f" executionId="a9c21832-6173-4260-964a-8c4cd4dc9127" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="72347684-b85a-4cbc-8348-806e42a1353c" testId="0fb81736-9d79-20a9-bdc5-c44d06abe806" testName="GetSynCodeByCardTest" computerName="DELL" duration="00:00:00.0180966" startTime="2015-08-18T02:30:02.5512429+06:00" endTime="2015-08-18T02:30:02.8324630+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72347684-b85a-4cbc-8348-806e42a1353c">
+    </UnitTestResult>
+    <UnitTestResult executionId="6d5ca028-901a-4b58-9ac5-61e738c8e2e7" testId="19074d93-ae85-cada-5799-e2c8a2c8421c" testName="ChangeCardSynCodeTest_CheckSynCodeIsNegativeException" computerName="DELL" duration="00:00:00.0038319" startTime="2015-08-18T02:30:02.8334439+06:00" endTime="2015-08-18T02:30:02.8424500+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d5ca028-901a-4b58-9ac5-61e738c8e2e7">
+    </UnitTestResult>
+    <UnitTestResult executionId="b8142eb6-c0df-4bb7-9ab0-6609d071888b" testId="209afb1e-649d-c295-b4ea-1e028f1cca87" testName="AddMailContactToCardTest" computerName="DELL" duration="00:00:00.0016533" startTime="2015-08-18T02:30:02.8434523+06:00" endTime="2015-08-18T02:30:02.8494557+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8142eb6-c0df-4bb7-9ab0-6609d071888b">
+    </UnitTestResult>
+    <UnitTestResult executionId="9e78d38a-ad46-498e-a46c-ba0ee7e50581" testId="28a841fd-6a6d-7b86-2117-e2777e7633c6" testName="GetIdByCardTest" computerName="DELL" duration="00:00:00.0004569" startTime="2015-08-18T02:30:02.8494557+06:00" endTime="2015-08-18T02:30:02.8554595+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e78d38a-ad46-498e-a46c-ba0ee7e50581">
+    </UnitTestResult>
+    <UnitTestResult executionId="8afcb948-1ff2-42cc-a126-3faebf6ccc6a" testId="29c6250f-b6cf-4d68-153d-6d3df6695a0e" testName="ToXmlTest" computerName="DELL" duration="00:00:00.0734385" startTime="2015-08-18T02:30:02.8554595+06:00" endTime="2015-08-18T02:30:02.9337242+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8afcb948-1ff2-42cc-a126-3faebf6ccc6a">
+    </UnitTestResult>
+    <UnitTestResult executionId="e4bc8baa-4764-4d18-b3e0-82ba74be63dc" testId="2ef7844d-340b-4036-2692-f9e6b47ceec5" testName="AddTelephoneContactToCardTest" computerName="DELL" duration="00:00:00.0006314" startTime="2015-08-18T02:30:02.9347256+06:00" endTime="2015-08-18T02:30:02.9397307+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4bc8baa-4764-4d18-b3e0-82ba74be63dc">
+    </UnitTestResult>
+    <UnitTestResult executionId="9aab3cbe-1cef-4ded-8a3d-dd028eccabe8" testId="3c3d88f7-73e4-7d94-267a-40d72833f51f" testName="MailConstructorTest" computerName="DELL" duration="00:00:00.0007496" startTime="2015-08-18T02:30:02.9407299+06:00" endTime="2015-08-18T02:30:02.9467538+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9aab3cbe-1cef-4ded-8a3d-dd028eccabe8">
+    </UnitTestResult>
+    <UnitTestResult executionId="3019c135-6c93-4d7c-808b-a00937116786" testId="4f132f1b-a465-c6fc-b527-fbe83d7a915a" testName="CompareToTest" computerName="DELL" duration="00:00:00.0003476" startTime="2015-08-18T02:30:02.9477346+06:00" endTime="2015-08-18T02:30:02.9517397+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3019c135-6c93-4d7c-808b-a00937116786">
+    </UnitTestResult>
+    <UnitTestResult executionId="178aaea0-8d28-4844-a505-b7ee76f021ac" testId="529a11b0-e73c-df97-6882-34db669d66d0" testName="CardConstructorTest_CheckSynCodeIsNegativeException" computerName="DELL" duration="00:00:00.0010772" startTime="2015-08-18T02:30:02.9537389+06:00" endTime="2015-08-18T02:30:02.9597454+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="178aaea0-8d28-4844-a505-b7ee76f021ac">
+    </UnitTestResult>
+    <UnitTestResult executionId="f463dd4d-0313-4dda-b55e-a22bbbf6f2dd" testId="5493fc41-1c33-f4a7-4664-27f588b206f2" testName="CardConstructorTest_CheckSynCodeIsZeroException" computerName="DELL" duration="00:00:00.0010692" startTime="2015-08-18T02:30:02.9607436+06:00" endTime="2015-08-18T02:30:02.9657470+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f463dd4d-0313-4dda-b55e-a22bbbf6f2dd">
+    </UnitTestResult>
+    <UnitTestResult executionId="5da9493f-cb8b-4dab-a827-13a4e63a34da" testId="646b689b-9ab6-1480-5951-b68877edaba9" testName="ZoneCodeTest" computerName="DELL" duration="00:00:00.0003980" startTime="2015-08-18T02:30:02.9667479+06:00" endTime="2015-08-18T02:30:02.9717713+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5da9493f-cb8b-4dab-a827-13a4e63a34da">
+    </UnitTestResult>
+    <UnitTestResult executionId="71da9339-9930-4adb-95ab-adad7191d237" testId="6cdb6060-4471-555b-a876-66f0907f57ec" testName="mailTest" computerName="DELL" duration="00:00:00.0002231" startTime="2015-08-18T02:30:02.9737531+06:00" endTime="2015-08-18T02:30:02.9777631+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71da9339-9930-4adb-95ab-adad7191d237">
+    </UnitTestResult>
+    <UnitTestResult executionId="74ae0c32-a79f-4fcf-868d-91d990687ae4" testId="8cbb983b-4c66-5027-a4c7-4c4426f2d1d0" testName="CompareToTest" computerName="DELL" duration="00:00:00.0003373" startTime="2015-08-18T02:30:02.9777631+06:00" endTime="2015-08-18T02:30:02.9827588+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74ae0c32-a79f-4fcf-868d-91d990687ae4">
+    </UnitTestResult>
+    <UnitTestResult executionId="2b571ad1-6da6-454f-8d0e-efe4ee428a1d" testId="9783d49a-4dee-7cba-5d48-12a02eed8012" testName="CardConstructorTest" computerName="DELL" duration="00:00:00.0001682" startTime="2015-08-18T02:30:02.9837602+06:00" endTime="2015-08-18T02:30:02.9877827+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b571ad1-6da6-454f-8d0e-efe4ee428a1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="5812a2c2-06f0-4780-aa50-3405ba0b3e72" testId="9c504600-96cf-f16b-08e3-921d3b83f3ee" testName="ToXmlTest" computerName="DELL" duration="00:00:00.0004886" startTime="2015-08-18T02:30:02.9887653+06:00" endTime="2015-08-18T02:30:02.9937669+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5812a2c2-06f0-4780-aa50-3405ba0b3e72">
+    </UnitTestResult>
+    <UnitTestResult executionId="2db3cb2e-4eeb-4251-a16b-376620046740" testId="aa8c2d19-253f-c02b-2e44-942bffdbc258" testName="ChangeCardSynCodeTest" computerName="DELL" duration="00:00:00.0002110" startTime="2015-08-18T02:30:02.9947678+06:00" endTime="2015-08-18T02:30:02.9987903+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2db3cb2e-4eeb-4251-a16b-376620046740">
+    </UnitTestResult>
+    <UnitTestResult executionId="559f6036-246c-44d8-9f02-1b0e1e3226c4" testId="abdbe6a4-fef8-75ed-9b7d-8c59f925758d" testName="TelephoneContactConstructorTest" computerName="DELL" duration="00:00:00.0002525" startTime="2015-08-18T02:30:02.9987903+06:00" endTime="2015-08-18T02:30:03.0037762+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="559f6036-246c-44d8-9f02-1b0e1e3226c4">
+    </UnitTestResult>
+    <UnitTestResult executionId="ce141f21-7647-4822-8029-8b1302d74704" testId="adbd554c-1ab7-4ecb-d6fe-51ee5d2695eb" testName="ToStringTest" computerName="DELL" duration="00:00:00.0005002" startTime="2015-08-18T02:30:03.0047749+06:00" endTime="2015-08-18T02:30:03.0177866+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce141f21-7647-4822-8029-8b1302d74704">
+    </UnitTestResult>
+    <UnitTestResult executionId="cbaf3834-2541-41ba-b11e-aee8f65c1811" testId="ae673e3c-53d5-97ec-6965-e23b6710e1ff" testName="GenerateCardIdTest" computerName="DELL" duration="00:00:00.0003494" startTime="2015-08-18T02:30:03.0187862+06:00" endTime="2015-08-18T02:30:03.0247918+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cbaf3834-2541-41ba-b11e-aee8f65c1811">
+    </UnitTestResult>
+    <UnitTestResult executionId="6b75230b-46bc-4136-a63b-da055ec07c5a" testId="af91e490-672f-c1c4-4e48-a1cce844c442" testName="CardConstructorTest1" computerName="DELL" duration="00:00:00.0001615" startTime="2015-08-18T02:30:03.0257901+06:00" endTime="2015-08-18T02:30:03.0298157+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b75230b-46bc-4136-a63b-da055ec07c5a">
+    </UnitTestResult>
+    <UnitTestResult executionId="cafa30b5-f445-40c9-942d-cf53c7d8aecb" testId="b1307c0c-4ede-56f8-0a33-79c23a6d1c7e" testName="CompareToTest" computerName="DELL" duration="00:00:00.0003793" startTime="2015-08-18T02:30:03.0298157+06:00" endTime="2015-08-18T02:30:03.0348168+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cafa30b5-f445-40c9-942d-cf53c7d8aecb">
+    </UnitTestResult>
+    <UnitTestResult executionId="492b09a4-a510-4e1e-9343-3f1a78798546" testId="b2b67615-458f-083a-6284-f0b0f21a9276" testName="ToXmlTest" computerName="DELL" duration="00:00:00.0004596" startTime="2015-08-18T02:30:03.0357972+06:00" endTime="2015-08-18T02:30:03.0398201+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="492b09a4-a510-4e1e-9343-3f1a78798546">
+    </UnitTestResult>
+    <UnitTestResult executionId="be16148a-4769-4e13-be78-3bba79437333" testId="b3aced41-42bc-a370-b416-aea49c419ea1" testName="GetProjectNameTest" computerName="DELL" duration="00:00:00.0005979" startTime="2015-08-18T02:30:03.0408005+06:00" endTime="2015-08-18T02:30:03.0448056+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be16148a-4769-4e13-be78-3bba79437333">
+    </UnitTestResult>
+    <UnitTestResult executionId="19c3c1e0-fe21-4fc3-b4da-a77d57ae2149" testId="b4a80ccf-c579-4df5-ab24-56af44cae2bb" testName="CloneTest" computerName="DELL" duration="00:00:00.0003427" startTime="2015-08-18T02:30:03.0458070+06:00" endTime="2015-08-18T02:30:03.0498268+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19c3c1e0-fe21-4fc3-b4da-a77d57ae2149">
+    </UnitTestResult>
+    <UnitTestResult executionId="fc0be9be-9ab5-4fad-bd22-93bf8918d64d" testId="bb9dd28b-c4c3-c7d7-57b9-f57164bc92e2" testName="ChangeCardNameTest_CheckNameEmptyException" computerName="DELL" duration="00:00:00.0009768" startTime="2015-08-18T02:30:03.0508076+06:00" endTime="2015-08-18T02:30:03.0558310+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc0be9be-9ab5-4fad-bd22-93bf8918d64d">
+    </UnitTestResult>
+    <UnitTestResult executionId="e0310776-0968-4929-91b3-02ae6d8a2ccc" testId="cb35465e-f65e-c08d-4301-04b728801d65" testName="CardConstructorTest_CheckNameEmptyException" computerName="DELL" duration="00:00:00.0008117" startTime="2015-08-18T02:30:03.0568119+06:00" endTime="2015-08-18T02:30:03.0608344+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0310776-0968-4929-91b3-02ae6d8a2ccc">
+    </UnitTestResult>
+    <UnitTestResult executionId="6077630b-f3ca-485a-9dcf-dd6b381eb674" testId="dac65389-413c-ed53-9a9b-90898f461cd3" testName="ChangeCardNameTest" computerName="DELL" duration="00:00:00.0002704" startTime="2015-08-18T02:30:03.0618152+06:00" endTime="2015-08-18T02:30:03.0668391+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6077630b-f3ca-485a-9dcf-dd6b381eb674">
+    </UnitTestResult>
+    <UnitTestResult executionId="ff56e04d-85a6-4a9e-8fbc-88c299e576a0" testId="dfd0ef85-908a-c826-bb07-b9eeaba81ceb" testName="ChangeCardSynCodeTest_CheckSynCodeIsZeroException" computerName="DELL" duration="00:00:00.0007791" startTime="2015-08-18T02:30:03.0678199+06:00" endTime="2015-08-18T02:30:03.0718424+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff56e04d-85a6-4a9e-8fbc-88c299e576a0">
+    </UnitTestResult>
+    <UnitTestResult executionId="3ade737f-6a5a-48df-b944-34f79ccb9a2c" testId="f20412a0-6696-ad3a-87c9-c2928186c749" testName="ToStringTest" computerName="DELL" duration="00:00:00.0002833" startTime="2015-08-18T02:30:03.0728237+06:00" endTime="2015-08-18T02:30:03.0768462+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ade737f-6a5a-48df-b944-34f79ccb9a2c">
+    </UnitTestResult>
+    <UnitTestResult executionId="a9c21832-6173-4260-964a-8c4cd4dc9127" testId="f7e20a1c-0bec-b371-ae2d-827540d3b83f" testName="GetNameByCardTest" computerName="DELL" duration="00:00:00.0001816" startTime="2015-08-18T02:30:03.0778266+06:00" endTime="2015-08-18T02:30:03.0818495+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9c21832-6173-4260-964a-8c4cd4dc9127">
+    </UnitTestResult>
+  </Results>
+</TestRun>
