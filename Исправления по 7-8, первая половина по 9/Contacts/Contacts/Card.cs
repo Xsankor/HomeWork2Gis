@@ -7,13 +7,14 @@ using System.Xml.Serialization;
 
 namespace Contacts
 {
-    public class Card : IComparable<Card>, ICloneable
+    public class Card : IComparable<Card>, ICloneable, IXmlSerializable
     {
         private string _name;
         private long SynCode;
         private long Id;
         public List<Contact> ContactList = new List<Contact>();
         public CardStatus cardStatus;
+        public XmlSerializer SerializedObject {get; set;}
 
         public Card(long synCode, string name)
         {
@@ -145,6 +146,5 @@ namespace Contacts
                     new XAttribute("Status", cardStatus)));
             return xmlCard;
         }
-
     }
 }

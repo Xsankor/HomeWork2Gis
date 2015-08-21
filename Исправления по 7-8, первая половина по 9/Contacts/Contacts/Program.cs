@@ -150,6 +150,12 @@ namespace Contacts
                 var newCard = new Card(synCode, name);
                 AddCardToCardList(cardList, newCard);
                 Console.WriteLine("Карточка добавлена.");
+                Card card = new Card();
+                // Создаем репозиторий xml 
+                var xmlRepo = new XmlRepository();
+                xmlRepo.SaveToXML(card);
+
+                xmlRepo.LoadTOXML();
             }
             catch (ArgumentNullException anEr)
             {

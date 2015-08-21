@@ -49,6 +49,7 @@
     <Compile Include="Card.cs" />
     <Compile Include="CardStatus.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="IXmlSerializable.cs" />
     <Compile Include="Mail.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
