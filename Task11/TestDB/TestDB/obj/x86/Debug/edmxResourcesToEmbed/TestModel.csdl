@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TestDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cards" EntityType="TestDBModel.Cards" />
+    <EntitySet Name="Contacts" EntityType="TestDBModel.Contacts" />
+    <EntitySet Name="ContactType" EntityType="TestDBModel.ContactType" />
+    <EntitySet Name="StatusType" EntityType="TestDBModel.StatusType" />
+    <AssociationSet Name="FK_CardContact" Association="TestDBModel.FK_CardContact">
+      <End Role="Cards" EntitySet="Cards" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CardStatusType" Association="TestDBModel.FK_CardStatusType">
+      <End Role="StatusType" EntitySet="StatusType" />
+      <End Role="Cards" EntitySet="Cards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactTypeContact" Association="TestDBModel.FK_ContactTypeContact">
+      <End Role="ContactType" EntitySet="ContactType" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cards">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="BranchId" Type="Int64" Nullable="false" />
+    <Property Name="SynCode" Type="Int64" Nullable="false" />
+    <Property Name="StatusTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contacts" Relationship="TestDBModel.FK_CardContact" FromRole="Cards" ToRole="Contacts" />
+    <NavigationProperty Name="StatusType" Relationship="TestDBModel.FK_CardStatusType" FromRole="Cards" ToRole="StatusType" />
+  </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CardId" Type="Int64" Nullable="false" />
+    <Property Name="ContactTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cards" Relationship="TestDBModel.FK_CardContact" FromRole="Contacts" ToRole="Cards" />
+    <NavigationProperty Name="ContactType" Relationship="TestDBModel.FK_ContactTypeContact" FromRole="Contacts" ToRole="ContactType" />
+  </EntityType>
+  <EntityType Name="ContactType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Contacts" Relationship="TestDBModel.FK_ContactTypeContact" FromRole="ContactType" ToRole="Contacts" />
+  </EntityType>
+  <EntityType Name="StatusType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Cards" Relationship="TestDBModel.FK_CardStatusType" FromRole="StatusType" ToRole="Cards" />
+  </EntityType>
+  <Association Name="FK_CardContact">
+    <End Role="Cards" Type="TestDBModel.Cards" Multiplicity="1" />
+    <End Role="Contacts" Type="TestDBModel.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cards">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="CardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CardStatusType">
+    <End Role="StatusType" Type="TestDBModel.StatusType" Multiplicity="1" />
+    <End Role="Cards" Type="TestDBModel.Cards" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cards">
+        <PropertyRef Name="StatusTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactTypeContact">
+    <End Role="ContactType" Type="TestDBModel.ContactType" Multiplicity="1" />
+    <End Role="Contacts" Type="TestDBModel.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="ContactTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

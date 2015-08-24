@@ -1,0 +1,12 @@
+B:\студия\Курсы C#\Task4\Data\Task11\TestDB\TestDB\bin\Debug\TestDB.exe.manifest
+B:\студия\Курсы C#\Task4\Data\Task11\TestDB\TestDB\bin\Debug\TestDB.application
+B:\студия\Курсы C#\Task4\Data\Task11\TestDB\TestDB\bin\Debug\TestDB.exe
+B:\студия\Курсы C#\Task4\Data\Task11\TestDB\TestDB\bin\Debug\TestDB.pdb
+B:\студия\Курсы C#\Task4\Data\Task11\TestDB\TestDB\obj\x86\Debug\TestDB.exe.manifest
+B:\студия\Курсы C#\Task4\Data\Task11\TestDB\TestDB\obj\x86\Debug\TestDB.application
+B:\студия\Курсы C#\Task4\Data\Task11\TestDB\TestDB\obj\x86\Debug\TestDB.exe
+B:\студия\Курсы C#\Task4\Data\Task11\TestDB\TestDB\obj\x86\Debug\TestDB.pdb
+B:\студия\Курсы C#\Task4\Data\Task11\TestDB\TestDB\bin\Debug\TestDB.exe.config
+B:\Тестирование\C#\Репозитарий\Task11\TestDB\TestDB\bin\Debug\TestDB.exe.config
+B:\Тестирование\C#\Репозитарий\Task11\TestDB\TestDB\obj\x86\Debug\TestDB.exe
+B:\Тестирование\C#\Репозитарий\Task11\TestDB\TestDB\obj\x86\Debug\TestDB.pdb

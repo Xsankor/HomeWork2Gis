@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="TestDBModelStoreContainer">
+    <EntitySet Name="Cards" EntityType="TestDBModel.Store.Cards" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contacts" EntityType="TestDBModel.Store.Contacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ContactType" EntityType="TestDBModel.Store.ContactType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StatusType" EntityType="TestDBModel.Store.StatusType" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CardContact" Association="TestDBModel.Store.FK_CardContact">
+      <End Role="Cards" EntitySet="Cards" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CardStatusType" Association="TestDBModel.Store.FK_CardStatusType">
+      <End Role="StatusType" EntitySet="StatusType" />
+      <End Role="Cards" EntitySet="Cards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactTypeContact" Association="TestDBModel.Store.FK_ContactTypeContact">
+      <End Role="ContactType" EntitySet="ContactType" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cards">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BranchId" Type="bigint" Nullable="false" />
+    <Property Name="SynCode" Type="bigint" Nullable="false" />
+    <Property Name="StatusTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CardId" Type="bigint" Nullable="false" />
+    <Property Name="ContactTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StatusType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CardContact">
+    <End Role="Cards" Type="TestDBModel.Store.Cards" Multiplicity="1" />
+    <End Role="Contacts" Type="TestDBModel.Store.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cards">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="CardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CardStatusType">
+    <End Role="StatusType" Type="TestDBModel.Store.StatusType" Multiplicity="1" />
+    <End Role="Cards" Type="TestDBModel.Store.Cards" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cards">
+        <PropertyRef Name="StatusTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactTypeContact">
+    <End Role="ContactType" Type="TestDBModel.Store.ContactType" Multiplicity="1" />
+    <End Role="Contacts" Type="TestDBModel.Store.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="ContactTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
