@@ -28,8 +28,11 @@ namespace Task10
                 
             }
             Console.ReadKey();
+
             var Path = "B:\\F";
-            DeleteDirectory(Path);
+            DirectoryInfo mainDirectory = new DirectoryInfo(Path);
+            DeleteDirectory(mainDirectory);
+
             
         }
 
@@ -43,11 +46,17 @@ namespace Task10
                 return GetNextFibbonachiNumber(Number - 1) + GetNextFibbonachiNumber(Number - 2);
         }
 
-        private static void DeleteDirectory(string path)
+        // Рекурсивное удаление директории
+        private static void DeleteDirectory(DirectoryInfo mainDirectory)
         {
-            var directories = Directory.EnumerateDirectories(path);
-            DirectoryInfo d = new DirectoryInfo(path);
-            d.Delete(true);
+            if (!mainDirectory.Exists)
+                return;
+            var directories = mainDirectory.EnumerateDirectories();
+            foreach (var directory in directories)
+            {
+                DeleteDirectory(directory);
+            }
+            mainDirectory.Delete(true);
         }
     }
 }

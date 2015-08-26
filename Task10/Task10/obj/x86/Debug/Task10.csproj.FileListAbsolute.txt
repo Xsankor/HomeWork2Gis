@@ -2,3 +2,4 @@ B:\студия\Курсы C#\Task4\Data\Task10\Task10\Task10\bin\Debug\Task10.e
 B:\студия\Курсы C#\Task4\Data\Task10\Task10\Task10\bin\Debug\Task10.pdb
 B:\студия\Курсы C#\Task4\Data\Task10\Task10\Task10\obj\x86\Debug\Task10.exe
 B:\студия\Курсы C#\Task4\Data\Task10\Task10\Task10\obj\x86\Debug\Task10.pdb
+B:\студия\Курсы C#\Task4\Data\Task10\Task10\Task10\obj\x86\Debug\Task10.csprojResolveAssemblyReference.cache
