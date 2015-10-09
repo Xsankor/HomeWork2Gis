@@ -1,0 +1,13 @@
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\AutoQA1.exe.config
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\obj\Debug\AutoQA1.csprojResolveAssemblyReference.cache
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\AutoQA1.exe
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\AutoQA1.pdb
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\HttpRequestHelper.dll
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\nunit.framework.dll
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\NUnitExtension.dll
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\nunit.framework.xml
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\NUnitExtension.xml
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\obj\Debug\AutoQA1.exe
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\obj\Debug\AutoQA1.pdb
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\Newtonsoft.Json.dll
+D:\OtherProjects\AutoQA1\AutoQA1\AutoQA1\bin\Debug\Newtonsoft.Json.xml

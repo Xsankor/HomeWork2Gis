@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NUnitExtension</name>
+    </assembly>
+    <members>
+        <member name="T:NUnitExtension.CategoryAttributes.PriorityTrivialAttribute">
+            <summary>
+            NUnit.Framework.CategoryAttribute with name Trivial.
+            </summary>
+        </member>
+        <member name="T:NUnitExtension.CategoryAttributes.PriorityMinorAttribute">
+            <summary>
+            NUnit.Framework.CategoryAttribute with name Minor.
+            </summary>
+        </member>
+        <member name="T:NUnitExtension.CategoryAttributes.PriorityMajorAttribute">
+            <summary>
+            NUnit.Framework.CategoryAttribute with name Major.
+            </summary>
+        </member>
+        <member name="T:NUnitExtension.CategoryAttributes.PriorityCriticalAttribute">
+            <summary>
+            NUnit.Framework.CategoryAttribute with name Critical.
+            </summary>
+        </member>
+        <member name="T:NUnitExtension.CategoryAttributes.PriorityBlockerAttribute">
+            <summary>
+            NUnit.Framework.CategoryAttribute with name Blocker.
+            </summary>
+        </member>
+    </members>
+</doc>
