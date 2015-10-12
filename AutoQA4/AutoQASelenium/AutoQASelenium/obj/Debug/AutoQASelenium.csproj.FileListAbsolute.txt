@@ -1,0 +1,12 @@
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\AutoQASelenium.exe.config
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\AutoQASelenium.exe
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\AutoQASelenium.pdb
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\obj\Debug\AutoQASelenium.exe
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\obj\Debug\AutoQASelenium.pdb
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\nunit.framework.dll
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\nunit.framework.testcasestorage.dll
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\WebDriver.dll
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\nunit.framework.xml
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\nunit.framework.testcasestorage.pdb
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\WebDriver.xml
+D:\OtherProjects\AutoQA4\AutoQASelenium\AutoQASelenium\bin\Debug\chromedriver.exe
