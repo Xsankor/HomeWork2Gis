@@ -1,39 +1,27 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:Program.cs" caret="0" fromTop="0" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="582" fromTop="11" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="129" fromTop="6" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1164" fromTop="32" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1092" fromTop="31" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:HomePage.cs" caret="244" fromTop="14" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="663" fromTop="19" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="221" fromTop="9" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:Program.cs" caret="130" fromTop="10" />
   </RecentFiles>
   <RecentEdits>
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:Program.cs" caret="246" fromTop="14" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:Program.cs" caret="150" fromTop="7" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="278" fromTop="20" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="173" fromTop="7" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="123" fromTop="6" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1334" fromTop="16" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1333" fromTop="18" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="422" fromTop="3" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="787" fromTop="13" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="787" fromTop="16" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="88" fromTop="9" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="971" fromTop="21" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="266" fromTop="7" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="623" fromTop="9" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="586" fromTop="9" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="278" fromTop="4" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="53" fromTop="4" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="0" fromTop="0" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="233" fromTop="9" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="458" fromTop="11" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="458" fromTop="16" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="826" fromTop="10" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="943" fromTop="14" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginPage.cs" caret="971" fromTop="6" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="129" fromTop="4" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="458" fromTop="4" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="53" fromTop="8" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="24" fromTop="1" />
-    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1204" fromTop="20" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:Program.cs" caret="125" fromTop="14" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="901" fromTop="19" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="923" fromTop="17" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="0" fromTop="0" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1636" fromTop="21" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1636" fromTop="13" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="664" fromTop="18" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:HomePage.cs" caret="135" fromTop="7" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:HomePage.cs" caret="232" fromTop="13" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1635" fromTop="25" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1636" fromTop="2" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:LoginAction.cs" caret="653" fromTop="12" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:HomePage.cs" caret="232" fromTop="11" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1372" fromTop="10" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:TestClass.cs" caret="1081" fromTop="5" />
+    <File id="5ED82DED-A9EA-414E-8205-E21496760962/f:Program.cs" caret="0" fromTop="0" />
   </RecentEdits>
 </RecentFiles>

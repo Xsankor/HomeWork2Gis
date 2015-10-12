@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -38,7 +32,21 @@ namespace AutoQASelenium
                 "Текст ошибки {0} не совпал с ожидаемым {1}",
                 errorMessage,
                 expectedErrorMessage);
+        }
 
+        [Test]
+        public void LoginPositveTest()
+        {
+            // Данный тест будет проходить только под авторизованным пользователем (под пользователем test будет падать)
+            var pageTitle = new LoginAction().DoLoginPositive(Driver, "test", "123qwe!");
+
+            var expectedPageTitle = "Планета 2ГИС";
+
+            Assert.AreEqual(
+                expectedPageTitle,
+                pageTitle,
+                "В ходе авторизации не удалось перейти на страницу {0}",
+                expectedPageTitle);
         }
 
         [TestFixtureTearDown]
